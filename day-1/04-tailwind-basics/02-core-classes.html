@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tailwind Core Classes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-8">
+  
+  <div class="max-w-6xl mx-auto">
+    
+    <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">
+      🔑 Tailwind Core Classes Reference
+    </h1>
+    
+    <!-- Colors Section -->
+    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">🎨 Colors</h2>
+      
+      <h3 class="text-xl font-semibold mb-4">Background Colors</h3>
+      <div class="grid grid-cols-4 gap-4 mb-6">
+        <div class="bg-red-500 text-white p-4 rounded text-center">bg-red-500</div>
+        <div class="bg-blue-500 text-white p-4 rounded text-center">bg-blue-500</div>
+        <div class="bg-green-500 text-white p-4 rounded text-center">bg-green-500</div>
+        <div class="bg-purple-500 text-white p-4 rounded text-center">bg-purple-500</div>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Color Shades (50-900)</h3>
+      <div class="flex gap-2 mb-4">
+        <div class="bg-blue-50 p-3 rounded flex-1 text-center text-sm">50</div>
+        <div class="bg-blue-100 p-3 rounded flex-1 text-center text-sm">100</div>
+        <div class="bg-blue-200 p-3 rounded flex-1 text-center text-sm">200</div>
+        <div class="bg-blue-300 p-3 rounded flex-1 text-center text-sm">300</div>
+        <div class="bg-blue-400 p-3 rounded flex-1 text-center text-sm">400</div>
+        <div class="bg-blue-500 p-3 rounded flex-1 text-center text-sm text-white">500</div>
+        <div class="bg-blue-600 p-3 rounded flex-1 text-center text-sm text-white">600</div>
+        <div class="bg-blue-700 p-3 rounded flex-1 text-center text-sm text-white">700</div>
+        <div class="bg-blue-800 p-3 rounded flex-1 text-center text-sm text-white">800</div>
+        <div class="bg-blue-900 p-3 rounded flex-1 text-center text-sm text-white">900</div>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Text Colors</h3>
+      <div class="space-y-2">
+        <p class="text-red-500 text-lg">text-red-500</p>
+        <p class="text-blue-500 text-lg">text-blue-500</p>
+        <p class="text-green-500 text-lg">text-green-500</p>
+        <p class="text-gray-700 text-lg">text-gray-700</p>
+      </div>
+    </section>
+    
+    <!-- Spacing Section -->
+    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">📏 Spacing</h2>
+      
+      <h3 class="text-xl font-semibold mb-4">Padding</h3>
+      <div class="space-y-4 mb-6">
+        <div class="bg-blue-100">
+          <div class="bg-blue-500 text-white p-2">p-2 (0.5rem / 8px)</div>
+        </div>
+        <div class="bg-blue-100">
+          <div class="bg-blue-500 text-white p-4">p-4 (1rem / 16px)</div>
+        </div>
+        <div class="bg-blue-100">
+          <div class="bg-blue-500 text-white p-8">p-8 (2rem / 32px)</div>
+        </div>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Directional Padding</h3>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-green-100">
+          <div class="bg-green-500 text-white px-6">px-6 (horizontal)</div>
+        </div>
+        <div class="bg-green-100">
+          <div class="bg-green-500 text-white py-6">py-6 (vertical)</div>
+        </div>
+        <div class="bg-green-100">
+          <div class="bg-green-500 text-white pt-8">pt-8 (top only)</div>
+        </div>
+        <div class="bg-green-100">
+          <div class="bg-green-500 text-white pb-8">pb-8 (bottom only)</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Typography Section -->
+    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">🔤 Typography</h2>
+      
+      <h3 class="text-xl font-semibold mb-4">Font Sizes</h3>
+      <div class="space-y-2 mb-6">
+        <p class="text-xs">text-xs (0.75rem)</p>
+        <p class="text-sm">text-sm (0.875rem)</p>
+        <p class="text-base">text-base (1rem)</p>
+        <p class="text-lg">text-lg (1.125rem)</p>
+        <p class="text-xl">text-xl (1.25rem)</p>
+        <p class="text-2xl">text-2xl (1.5rem)</p>
+        <p class="text-3xl">text-3xl (1.875rem)</p>
+        <p class="text-4xl">text-4xl (2.25rem)</p>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Font Weights</h3>
+      <div class="space-y-2 mb-6">
+        <p class="font-light text-lg">font-light (300)</p>
+        <p class="font-normal text-lg">font-normal (400)</p>
+        <p class="font-medium text-lg">font-medium (500)</p>
+        <p class="font-semibold text-lg">font-semibold (600)</p>
+        <p class="font-bold text-lg">font-bold (700)</p>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Text Alignment</h3>
+      <div class="space-y-4 bg-gray-100 p-4 rounded">
+        <p class="text-left">text-left</p>
+        <p class="text-center">text-center</p>
+        <p class="text-right">text-right</p>
+      </div>
+    </section>
+    
+    <!-- Borders & Rounded Section -->
+    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">🎁 Borders & Rounded</h2>
+      
+      <h3 class="text-xl font-semibold mb-4">Borders</h3>
+      <div class="grid grid-cols-3 gap-4 mb-6">
+        <div class="border p-4 text-center">border</div>
+        <div class="border-2 p-4 text-center">border-2</div>
+        <div class="border-4 p-4 text-center">border-4</div>
+        <div class="border-2 border-red-500 p-4 text-center">border-red-500</div>
+        <div class="border-2 border-blue-500 p-4 text-center">border-blue-500</div>
+        <div class="border-2 border-green-500 p-4 text-center">border-green-500</div>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Rounded Corners</h3>
+      <div class="grid grid-cols-4 gap-4">
+        <div class="bg-purple-500 text-white p-4 rounded text-center">rounded</div>
+        <div class="bg-purple-500 text-white p-4 rounded-md text-center">rounded-md</div>
+        <div class="bg-purple-500 text-white p-4 rounded-lg text-center">rounded-lg</div>
+        <div class="bg-purple-500 text-white p-4 rounded-full text-center">rounded-full</div>
+      </div>
+    </section>
+    
+    <!-- Shadows Section -->
+    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">💎 Shadows</h2>
+      
+      <div class="grid grid-cols-3 gap-6">
+        <div class="bg-white p-6 shadow-sm text-center border">shadow-sm</div>
+        <div class="bg-white p-6 shadow text-center">shadow</div>
+        <div class="bg-white p-6 shadow-md text-center">shadow-md</div>
+        <div class="bg-white p-6 shadow-lg text-center">shadow-lg</div>
+        <div class="bg-white p-6 shadow-xl text-center">shadow-xl</div>
+        <div class="bg-white p-6 shadow-2xl text-center">shadow-2xl</div>
+      </div>
+    </section>
+    
+    <!-- Flexbox Section -->
+    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">📐 Flexbox Layout</h2>
+      
+      <h3 class="text-xl font-semibold mb-4">Horizontal Alignment (justify-content)</h3>
+      <div class="space-y-4 mb-6">
+        <div class="flex justify-start gap-2 bg-gray-100 p-4 rounded">
+          <div class="bg-blue-500 text-white p-2 rounded">1</div>
+          <div class="bg-blue-500 text-white p-2 rounded">2</div>
+          <div class="bg-blue-500 text-white p-2 rounded">3</div>
+          <span class="text-sm self-center ml-4">justify-start</span>
+        </div>
+        <div class="flex justify-center gap-2 bg-gray-100 p-4 rounded">
+          <div class="bg-green-500 text-white p-2 rounded">1</div>
+          <div class="bg-green-500 text-white p-2 rounded">2</div>
+          <div class="bg-green-500 text-white p-2 rounded">3</div>
+          <span class="text-sm self-center ml-4">justify-center</span>
+        </div>
+        <div class="flex justify-between gap-2 bg-gray-100 p-4 rounded">
+          <div class="bg-purple-500 text-white p-2 rounded">1</div>
+          <div class="bg-purple-500 text-white p-2 rounded">2</div>
+          <div class="bg-purple-500 text-white p-2 rounded">3</div>
+          <span class="text-sm self-center">justify-between</span>
+        </div>
+      </div>
+      
+      <h3 class="text-xl font-semibold mb-4">Vertical Alignment (items)</h3>
+      <div class="space-y-4">
+        <div class="flex items-start gap-2 bg-gray-100 p-4 rounded h-32">
+          <div class="bg-red-500 text-white p-2 rounded">1</div>
+          <div class="bg-red-500 text-white p-2 rounded">2</div>
+          <span class="text-sm">items-start</span>
+        </div>
+        <div class="flex items-center gap-2 bg-gray-100 p-4 rounded h-32">
+          <div class="bg-orange-500 text-white p-2 rounded">1</div>
+          <div class="bg-orange-500 text-white p-2 rounded">2</div>
+          <span class="text-sm">items-center</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Hover Effects Section -->
+    <section class="bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-3">🎭 Hover Effects</h2>
+      
+      <div class="grid grid-cols-2 gap-6">
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+          hover:bg-blue-600
+        </button>
+        <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:shadow-lg transition">
+          hover:shadow-lg
+        </button>
+        <button class="border-2 border-purple-500 text-purple-500 px-6 py-3 rounded-lg hover:bg-purple-500 hover:text-white transition">
+          hover:bg + hover:text
+        </button>
+        <button class="bg-red-500 text-white px-6 py-3 rounded-lg transform hover:scale-105 transition">
+          hover:scale-105
+        </button>
+      </div>
+    </section>
+    
+  </div>
+  
+</body>
+</html>

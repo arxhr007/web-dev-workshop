@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tailwind Live Build Examples</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 p-8">
+  
+  <div class="max-w-6xl mx-auto">
+    
+    <h1 class="text-5xl font-bold text-center mb-4 text-gray-800">
+      🏗️ Tailwind Live Build
+    </h1>
+    <p class="text-center text-gray-600 mb-12 text-lg">
+      Complete component examples built with Tailwind CSS
+    </p>
+    
+    <!-- Buttons Section -->
+    <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">🔘 Buttons</h2>
+      
+      <div class="flex flex-wrap gap-4">
+        <!-- Primary Button -->
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition shadow-md">
+          Primary Button
+        </button>
+        
+        <!-- Success Button -->
+        <button class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-md">
+          Success Button
+        </button>
+        
+        <!-- Danger Button -->
+        <button class="bg-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition shadow-md">
+          Danger Button
+        </button>
+        
+        <!-- Outline Button -->
+        <button class="border-2 border-purple-500 text-purple-500 px-6 py-3 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition">
+          Outline Button
+        </button>
+        
+        <!-- Rounded Full Button -->
+        <button class="bg-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-600 transition shadow-lg">
+          Pill Button
+        </button>
+        
+        <!-- Gradient Button -->
+        <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition shadow-md">
+          Gradient Button
+        </button>
+      </div>
+    </section>
+    
+    <!-- Cards Section -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">🃏 Cards</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1: Basic Card -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl mb-4">
+            📘
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Basic Card</h3>
+          <p class="text-gray-600 mb-4">
+            This is a simple card component with hover effect and rounded corners.
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full transition">
+            Learn More
+          </button>
+        </div>
+        
+        <!-- Card 2: Image Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="h-40 bg-gradient-to-r from-green-400 to-blue-500"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Image Card</h3>
+            <p class="text-gray-600 mb-4">
+              Card with gradient header image placeholder.
+            </p>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full transition">
+              View Details
+            </button>
+          </div>
+        </div>
+        
+        <!-- Card 3: Pricing Card -->
+        <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg shadow-md p-6 text-white hover:shadow-xl transition transform hover:scale-105">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold mb-2">Premium</h3>
+            <div class="text-4xl font-bold mb-4">$29<span class="text-lg">/mo</span></div>
+            <ul class="text-left mb-6 space-y-2">
+              <li>✅ Unlimited Projects</li>
+              <li>✅ Priority Support</li>
+              <li>✅ Advanced Analytics</li>
+            </ul>
+            <button class="bg-white text-purple-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 w-full transition">
+              Get Started
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- Table Section -->
+    <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">📊 Styled Table</h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-gray-800 text-white">
+              <th class="p-4 text-left font-semibold">Employee</th>
+              <th class="p-4 text-left font-semibold">Role</th>
+              <th class="p-4 text-left font-semibold">Department</th>
+              <th class="p-4 text-left font-semibold">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b hover:bg-gray-50 transition">
+              <td class="p-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                    AS
+                  </div>
+                  <div>
+                    <div class="font-semibold">Alice Smith</div>
+                    <div class="text-sm text-gray-500">alice@example.com</div>
+                  </div>
+                </div>
+              </td>
+              <td class="p-4 text-gray-700">Senior Developer</td>
+              <td class="p-4 text-gray-700">Engineering</td>
+              <td class="p-4">
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50 transition">
+              <td class="p-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                    BJ
+                  </div>
+                  <div>
+                    <div class="font-semibold">Bob Johnson</div>
+                    <div class="text-sm text-gray-500">bob@example.com</div>
+                  </div>
+                </div>
+              </td>
+              <td class="p-4 text-gray-700">Product Manager</td>
+              <td class="p-4 text-gray-700">Product</td>
+              <td class="p-4">
+                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  Away
+                </span>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50 transition">
+              <td class="p-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">
+                    CD
+                  </div>
+                  <div>
+                    <div class="font-semibold">Carol Davis</div>
+                    <div class="text-sm text-gray-500">carol@example.com</div>
+                  </div>
+                </div>
+              </td>
+              <td class="p-4 text-gray-700">UX Designer</td>
+              <td class="p-4 text-gray-700">Design</td>
+              <td class="p-4">
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="p-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                    DW
+                  </div>
+                  <div>
+                    <div class="font-semibold">David Wilson</div>
+                    <div class="text-sm text-gray-500">david@example.com</div>
+                  </div>
+                </div>
+              </td>
+              <td class="p-4 text-gray-700">Data Analyst</td>
+              <td class="p-4 text-gray-700">Analytics</td>
+              <td class="p-4">
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  Offline
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <!-- Form Section -->
+    <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">📝 Contact Form</h2>
+      
+      <form class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-2">Full Name</label>
+          <input 
+            type="text" 
+            placeholder="John Doe"
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition"
+          >
+        </div>
+        
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-2">Email Address</label>
+          <input 
+            type="email" 
+            placeholder="john@example.com"
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition"
+          >
+        </div>
+        
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea 
+            rows="4"
+            placeholder="Your message here..."
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition"
+          ></textarea>
+        </div>
+        
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 w-full transition shadow-md">
+          Send Message
+        </button>
+      </form>
+    </section>
+    
+    <!-- Alert Boxes Section -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">🚨 Alert Boxes</h2>
+      
+      <div class="space-y-4">
+        <!-- Success Alert -->
+        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+          <div class="flex items-start">
+            <span class="text-2xl mr-3">✅</span>
+            <div>
+              <h4 class="text-green-800 font-bold mb-1">Success!</h4>
+              <p class="text-green-700">Your changes have been saved successfully.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Warning Alert -->
+        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
+          <div class="flex items-start">
+            <span class="text-2xl mr-3">⚠️</span>
+            <div>
+              <h4 class="text-yellow-800 font-bold mb-1">Warning!</h4>
+              <p class="text-yellow-700">This action cannot be undone. Please proceed with caution.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Error Alert -->
+        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+          <div class="flex items-start">
+            <span class="text-2xl mr-3">❌</span>
+            <div>
+              <h4 class="text-red-800 font-bold mb-1">Error!</h4>
+              <p class="text-red-700">Something went wrong. Please try again later.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Info Alert -->
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+          <div class="flex items-start">
+            <span class="text-2xl mr-3">ℹ️</span>
+            <div>
+              <h4 class="text-blue-800 font-bold mb-1">Information</h4>
+              <p class="text-blue-700">This feature is currently in beta testing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Badges Section -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">🏷️ Badges & Tags</h2>
+      
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+          New
+        </span>
+        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+          Active
+        </span>
+        <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">
+          Hot
+        </span>
+        <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold">
+          Pending
+        </span>
+        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold">
+          Premium
+        </span>
+        <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
+          Draft
+        </span>
+        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-lg text-sm font-semibold">
+          Tailwind
+        </span>
+        <span class="bg-pink-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow">
+          Featured
+        </span>
+      </div>
+    </section>
+    
+  </div>
+  
+</body>
+</html>

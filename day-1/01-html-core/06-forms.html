@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Forms</title>
+</head>
+<body>
+  
+  <h1>HTML Forms</h1>
+  
+  <!-- Basic Form -->
+  <h2>Contact Form</h2>
+  
+  <form>
+    <label>Name:</label><br>
+    <input type="text" placeholder="Enter your name"><br><br>
+    
+    <label>Email:</label><br>
+    <input type="email" placeholder="your@email.com"><br><br>
+    
+    <label>Message:</label><br>
+    <textarea rows="4" cols="30" placeholder="Your message here"></textarea><br><br>
+    
+    <button>Submit</button>
+  </form>
+  
+  <hr>
+  
+  <!-- Form with different input types -->
+  <h2>Registration Form</h2>
+  
+  <form>
+    <label>Full Name:</label><br>
+    <input type="text" placeholder="John Doe"><br><br>
+    
+    <label>Email:</label><br>
+    <input type="email" placeholder="john@example.com"><br><br>
+    
+    <label>Password:</label><br>
+    <input type="password" placeholder="Enter password"><br><br>
+    
+    <label>Date of Birth:</label><br>
+    <input type="date"><br><br>
+    
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    
+    <label>Interests:</label><br>
+    <input type="checkbox" name="sports"> Sports<br>
+    <input type="checkbox" name="music"> Music<br>
+    <input type="checkbox" name="coding"> Coding<br><br>
+    
+    <label>Country:</label><br>
+    <select>
+      <option>Select Country</option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>Canada</option>
+      <option>India</option>
+    </select><br><br>
+    
+    <button type="submit">Register</button>
+    <button type="reset">Clear Form</button>
+  </form>
+  
+  <hr>
+  
+  <!-- Form with fieldset -->
+  <h2>Survey Form</h2>
+  
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      
+      <label for="lname">Last Name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+    </fieldset>
+    
+    <br>
+    
+    <fieldset>
+      <legend>Feedback</legend>
+      
+      <label>How satisfied are you?</label><br>
+      <input type="radio" name="rating" value="5"> Very Satisfied<br>
+      <input type="radio" name="rating" value="4"> Satisfied<br>
+      <input type="radio" name="rating" value="3"> Neutral<br>
+      <input type="radio" name="rating" value="2"> Unsatisfied<br>
+      <input type="radio" name="rating" value="1"> Very Unsatisfied<br>
+    </fieldset>
+    
+    <br>
+    <button type="submit">Submit Survey</button>
+  </form>
+  
+  <hr>
+  
+  <h3>Common Input Types:</h3>
+  <ul>
+    <li><code>text</code> - Single line text</li>
+    <li><code>email</code> - Email validation</li>
+    <li><code>password</code> - Hidden text</li>
+    <li><code>number</code> - Numeric input</li>
+    <li><code>date</code> - Date picker</li>
+    <li><code>radio</code> - Single choice</li>
+    <li><code>checkbox</code> - Multiple choices</li>
+    <li><code>file</code> - File upload</li>
+  </ul>
+  
+</body>
+</html>

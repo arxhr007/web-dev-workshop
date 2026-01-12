@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Design with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 md:p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+        📱 Responsive Design with Tailwind
+      </h1>
+      <p class="text-center mt-2 text-sm md:text-base lg:text-lg opacity-90">
+        Resize your browser to see responsive behavior!
+      </p>
+    </div>
+  </header>
+  
+  <div class="container mx-auto px-4 py-8">
+    
+    <!-- Breakpoint Indicator -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">🔍 Current Breakpoint</h2>
+      <div class="space-y-2">
+        <div class="block sm:hidden bg-red-500 text-white p-4 rounded-lg text-center font-bold">
+          📱 Mobile (Default - Below 640px)
+        </div>
+        <div class="hidden sm:block md:hidden bg-orange-500 text-white p-4 rounded-lg text-center font-bold">
+          📱 SM - Small (640px and up)
+        </div>
+        <div class="hidden md:block lg:hidden bg-yellow-500 text-white p-4 rounded-lg text-center font-bold">
+          💻 MD - Medium (768px and up)
+        </div>
+        <div class="hidden lg:block xl:hidden bg-green-500 text-white p-4 rounded-lg text-center font-bold">
+          🖥️ LG - Large (1024px and up)
+        </div>
+        <div class="hidden xl:block 2xl:hidden bg-blue-500 text-white p-4 rounded-lg text-center font-bold">
+          🖥️ XL - Extra Large (1280px and up)
+        </div>
+        <div class="hidden 2xl:block bg-purple-500 text-white p-4 rounded-lg text-center font-bold">
+          🖥️ 2XL - 2X Large (1536px and up)
+        </div>
+      </div>
+    </div>
+    
+    <!-- Example 1: Responsive Grid -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">1️⃣ Responsive Grid Layout</h2>
+      <p class="text-gray-600 mb-4">
+        <strong>Mobile:</strong> 1 column | <strong>Tablet (md):</strong> 2 columns | <strong>Desktop (lg):</strong> 4 columns
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-blue-500 text-white p-6 rounded-lg text-center font-semibold">
+          Card 1
+        </div>
+        <div class="bg-green-500 text-white p-6 rounded-lg text-center font-semibold">
+          Card 2
+        </div>
+        <div class="bg-purple-500 text-white p-6 rounded-lg text-center font-semibold">
+          Card 3
+        </div>
+        <div class="bg-pink-500 text-white p-6 rounded-lg text-center font-semibold">
+          Card 4
+        </div>
+      </div>
+      
+      <div class="mt-4 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 2: Stack to Row -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">2️⃣ Stack on Mobile, Row on Desktop</h2>
+      <p class="text-gray-600 mb-4">
+        <strong>Mobile:</strong> Vertical stack | <strong>Desktop (md):</strong> Horizontal row
+      </p>
+      
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-8 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Section 1</h3>
+          <p>This stacks vertically on mobile, horizontally on desktop.</p>
+        </div>
+        <div class="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-8 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Section 2</h3>
+          <p>Resize your browser to see the change!</p>
+        </div>
+      </div>
+      
+      <div class="mt-4 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          flex flex-col md:flex-row gap-4
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 3: Responsive Text Size -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">3️⃣ Responsive Typography</h2>
+      <p class="text-gray-600 mb-4">
+        Text size grows as screen size increases
+      </p>
+      
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-4">
+        Responsive Heading
+      </h1>
+      
+      <p class="text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed">
+        This paragraph text also adjusts: small on mobile, base on tablet, large on desktop.
+        The heading above scales from 1.5rem on mobile all the way to 3.75rem on extra large screens!
+      </p>
+      
+      <div class="mt-4 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 4: Hide/Show Elements -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">4️⃣ Show/Hide Based on Screen Size</h2>
+      
+      <div class="space-y-4">
+        <!-- Mobile Only -->
+        <div class="block md:hidden bg-red-100 border-l-4 border-red-500 p-4 rounded">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">📱</span>
+            <div>
+              <h3 class="font-bold text-red-800">Mobile Only Content</h3>
+              <p class="text-red-700 text-sm">Visible only on screens below 768px (class: block md:hidden)</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desktop Only -->
+        <div class="hidden md:block bg-green-100 border-l-4 border-green-500 p-4 rounded">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🖥️</span>
+            <div>
+              <h3 class="font-bold text-green-800">Desktop Only Content</h3>
+              <p class="text-green-700 text-sm">Visible only on screens 768px and above (class: hidden md:block)</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tablet and Up -->
+        <div class="hidden sm:block bg-blue-100 border-l-4 border-blue-500 p-4 rounded">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">💻</span>
+            <div>
+              <h3 class="font-bold text-blue-800">Tablet and Desktop</h3>
+              <p class="text-blue-700 text-sm">Visible on screens 640px and above (class: hidden sm:block)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-4 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          block md:hidden | hidden md:block | hidden sm:block
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 5: Responsive Padding -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">5️⃣ Responsive Spacing</h2>
+      <p class="text-gray-600 mb-4">
+        Padding increases on larger screens
+      </p>
+      
+      <div class="bg-gradient-to-r from-orange-400 to-red-500 text-white rounded-lg p-4 md:p-8 lg:p-12">
+        <h3 class="text-xl font-bold mb-2">Responsive Padding Box</h3>
+        <p>
+          <strong>Mobile:</strong> 1rem (16px) padding<br>
+          <strong>Tablet:</strong> 2rem (32px) padding<br>
+          <strong>Desktop:</strong> 3rem (48px) padding
+        </p>
+      </div>
+      
+      <div class="mt-4 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          p-4 md:p-8 lg:p-12
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 6: Responsive Container Width -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">6️⃣ Responsive Width</h2>
+      <p class="text-gray-600 mb-4">
+        Container width changes based on screen size
+      </p>
+      
+      <div class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto bg-gradient-to-r from-teal-500 to-cyan-500 text-white p-8 rounded-lg">
+        <h3 class="text-xl font-bold mb-2 text-center">Centered Container</h3>
+        <p class="text-center">
+          <strong>Mobile:</strong> 100% width<br>
+          <strong>SM:</strong> 75% width<br>
+          <strong>MD:</strong> 66% width<br>
+          <strong>LG:</strong> 50% width<br>
+          <strong>XL:</strong> 40% width
+        </p>
+      </div>
+      
+      <div class="mt-4 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 7: Responsive Product Cards -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">7️⃣ Real-World Example: Product Grid</h2>
+      <p class="text-gray-600 mb-6">
+        Complete responsive product card layout
+      </p>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+        
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Product 1</h3>
+            <p class="text-gray-600 text-sm mb-4">Premium quality item with amazing features.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-blue-600">$99</span>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-sm">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 bg-gradient-to-br from-green-400 to-green-600"></div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Product 2</h3>
+            <p class="text-gray-600 text-sm mb-4">Best seller with 5-star reviews.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-green-600">$79</span>
+              <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-sm">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600"></div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Product 3</h3>
+            <p class="text-gray-600 text-sm mb-4">Limited edition special offer.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-purple-600">$129</span>
+              <button class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 text-sm">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 bg-gradient-to-br from-pink-400 to-pink-600"></div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Product 4</h3>
+            <p class="text-gray-600 text-sm mb-4">Most popular choice this month.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">$89</span>
+              <button class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 text-sm">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="mt-6 bg-gray-100 p-4 rounded">
+        <code class="text-sm text-gray-800">
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6
+        </code>
+      </div>
+    </section>
+    
+    <!-- Example 8: Responsive Navigation -->
+    <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">8️⃣ Responsive Navigation Bar</h2>
+      
+      <nav class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg p-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <!-- Logo -->
+          <div class="text-2xl font-bold">🚀 MyBrand</div>
+          
+          <!-- Menu Items - Stack on mobile, row on desktop -->
+          <ul class="flex flex-col md:flex-row gap-2 md:gap-6">
+            <li><a href="#" class="hover:text-indigo-200 transition block py-2 md:py-0">Home</a></li>
+            <li><a href="#" class="hover:text-indigo-200 transition block py-2 md:py-0">Products</a></li>
+            <li><a href="#" class="hover:text-indigo-200 transition block py-2 md:py-0">About</a></li>
+            <li><a href="#" class="hover:text-indigo-200 transition block py-2 md:py-0">Contact</a></li>
+          </ul>
+          
+          <!-- CTA Button -->
+          <button class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold hover:bg-indigo-50 transition w-full md:w-auto">
+            Sign Up
+          </button>
+        </div>
+      </nav>
+      
+      <div class="mt-4 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+        <p class="text-blue-700 text-sm">
+          <strong>💡 Tip:</strong> On mobile, the menu items stack vertically. On desktop (md and up), 
+          they display horizontally with the logo on the left and button on the right.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Quick Reference -->
+    <section class="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg shadow-lg p-8">
+      <h2 class="text-3xl font-bold mb-6">📋 Quick Reference</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div>
+          <h3 class="text-xl font-bold mb-3 text-yellow-400">Breakpoint Prefixes</h3>
+          <ul class="space-y-2 text-sm">
+            <li><code class="bg-gray-700 px-2 py-1 rounded">sm:</code> 640px and up</li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">md:</code> 768px and up</li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">lg:</code> 1024px and up</li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">xl:</code> 1280px and up</li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">2xl:</code> 1536px and up</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-3 text-yellow-400">Common Patterns</h3>
+          <ul class="space-y-2 text-sm">
+            <li><code class="bg-gray-700 px-2 py-1 rounded">flex-col md:flex-row</code></li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">grid-cols-1 md:grid-cols-2</code></li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">text-sm md:text-base lg:text-lg</code></li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">hidden md:block</code></li>
+            <li><code class="bg-gray-700 px-2 py-1 rounded">w-full md:w-1/2</code></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="mt-6 bg-yellow-500 text-gray-900 p-4 rounded-lg">
+        <p class="font-semibold">
+          ⚡ Remember: Tailwind is <strong>mobile-first</strong>! 
+          Base classes apply to all screens, then override with breakpoint prefixes for larger screens.
+        </p>
+      </div>
+    </section>
+    
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg mb-2">🎉 You've mastered responsive design with Tailwind!</p>
+      <p class="text-gray-400 text-sm">Resize your browser window to see all the responsive behaviors in action.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
